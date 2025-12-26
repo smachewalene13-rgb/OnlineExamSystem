@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>personal  Website</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
     #test{
-        color:blue;
+        color: rgb(255, 124, 31);
         text-emphasis: none;
         text-align: center;
-        
        } 
        #check
        {
@@ -25,24 +18,26 @@
        font-size: large;
     }
     .tg-icon{
-      color: blue;       
+      color: rgb(13, 13, 133);       
        font-size: 40px;
-     border-radius: 40px;
-     grid-area: 5px; 
+        border: radius 5px;
+        padding-left: 50px;
+        margin-right: 80px; 
+        row-gap: 15px;
     }
     .tg-icon:hover{
         color:white;
     }
 
 header {
-background-color: aqua;
-    color:rgba(36, 36, 184, 0.712);
-    border-radius: 10px;
-    
+    background-color: rgb(224, 250, 215);
+    color:blue
+    padding: 5px 0;
+    text-align: center;
 }
 
 header h1 {
-    margin: 0;   
+    margin: 0;
     text-align: center;
     font-size: larger;
     
@@ -61,13 +56,6 @@ nav ul li {
 nav ul li a {
     color: #350a0a;
 text-decoration: dotted;
-color: red;
-
-}
-nav ul li a:hover{
-    background-color:white;
-    border-radius: 10px;
-
 }
 
 .about{
@@ -109,7 +97,6 @@ background-color: rgb(224, 250, 215);
 border-radius: 5px;
 border: #333333;
 margin-bottom: 15px;
-text-decoration: dotted;
 }
 .photo{
     text-align: center;
@@ -150,14 +137,12 @@ background-image: -moz-linear-gradient();
     border: #ccc 2px solid;
     border-radius: 10px;
     background-color: #c9b6b6;
-flex-direction: column;
 }
 input{
     padding: 6px;
     margin: 15px;
     border-radius: 8px;
     overflow: hidden; 
-    flex-direction: column;
 }
 form{
     text-align: center;
@@ -236,69 +221,3 @@ footer {
     background-color:rgb(7, 110, 69);
     color: #fff;
 }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>SAMI</h1>
-        <p  id="test"><marquee behavior="scroll" direction="horzontal">I AM SIMCHEW ALENE FROM INJIBARA UNIVERSITY INFORMATION SYSTEM STUDENT</marquee></p>
-        <p>EXPLORE YOUR CREATIVITY POTENTIAL !!!</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="about">
-        <h2 class="about-title">About Me</h2>
-        <img class="profile-image" src="pr.jpg" alt="" >
-        <p class="intro">Hello! I'm a passionate web developer with experience in creating dynamic and responsive websites. I love coding and exploring new technologies.</p>
-    </div>
-    <section id="projects">
-        <h2 class="test">My Projects</h2>
-        <div class="project">
-            <h3 class="check photoshop">Photoshop</h3>
-       <img class="Photoshop" src ="img.jpg" alt="">
-        </div>
-            <p class="photo">photoshop is a powerful graphics editing software developed by Adobe Inc.<br> It is widely used by photographers, graphic designers, web developers</p>
-        </div>
-        <div class="editor">
-            <h>video editor</h3>
-            <p >Video editing is the process of manipulating and rearranging video footage to create a new, finished product.<br>It involves various tasks and techniques that enhance the visual storytelling of the video. </p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2 class="contact-title">Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="name" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="4003" required></textarea>
-            <p id="parr"></p>
-        <h2  id="hello">hello</h2
-    < button onclick="handleClick()" class="btn" type="submit">Submit</button>
-        </form>
-    </section>
-    <footer>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-       <a href="https://youtube.com/@SmachewAlene" ><i class="yt-icon fa-brands fa-youtube"></i></a>
-  <a href="https://tiktok.com/@Simex.sami" ><i class="tk-icon fa-brands fa-tiktok"></i></a>
-     <a href="https://t.me/simexsamialene" ><i class="tg-icon fa-brands fa-telegram"></i></a>
-     <p backgroundcolor:black>&copy;Sami2018. All rights reserved.</p>
-    </footer>
-    <script>
-        function handleClick (){
-            let parr = document.getElementById('parr') 
-           parr.innerHTML = 'form submitted succesfully'
-          let hello = document.getElementById('hello')
-            hello.style.color = 'red'
-        };
-    </script>
-</body>
-</html>
-
